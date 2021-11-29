@@ -17,12 +17,12 @@ Esta API posee los siguientes servicios:
  - Obtiene los otros héroes con los cuales nuestro personaje ha interactuado
    en cada uno de los cómics.
    
-##Decisiones técnicas
+## Decisiones técnicas
 Para almacenar la información en la base de datos uso H2 Database (base de datos en memoria), la cual al iniciar la aplicación se encuentra vacía.
 Para realizar la sincronización con la API de marvel, se configuró un Cron que se ejecuta todos los días a las 00:00:01 HS.		
 Utiliza Swagger para documentar la API.
 Se utilizaron aspects para logear los servicios.
 
-***El proyecto incluye un par de scripts llamados:
+***El proyecto incluye un par de scripts llamados:***
   - assemble.sh el cual hace la construcción del aplicativo que exponen los servicios.
   - avengers.sh el cual ejecuta el aplicativo que exponen los servicios en el puerto 80***
